@@ -1,0 +1,21 @@
+{
+    "available_types": ["normal", "fighting", "flying", "poison", "ground", "rock", "bug", "ghost", "steel", "fire", "water", "grass", "electric", "psychic", "ice", "dragon", "dark"],
+    "overrides": {
+        "35": {"typeA": "normal"},
+        "36": {"typeA": "normal"},
+        "39": {"typeB": null},
+        "40": {"typeB": null},
+        "122": {"typeB": null},
+        "173": {"typeA": "normal"},
+        "174": {"typeB": null},
+        "175": {"typeA": "normal"},
+        "176": {"typeA": "normal"},
+        "183": {"typeB": null},
+        "184": {"typeB": null},
+        "209": {"typeA": "normal"},
+        "210": {"typeA": "normal"}
+    },
+    "pokedex": [
+        152, 153, 154, 155, 156, 157, 158, 159, 160
+    ]
+}
