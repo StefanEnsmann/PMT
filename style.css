@@ -1,37 +1,90 @@
-.header {
+:root {
+    --first-row-height: 300px;
+    --first-col-width: 350px;
+    --second-col-width: 500px;
+    --outer-padding: 10px;
+    --inner-padding: 5px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#tracker-complete {
+    width: 100%;
+    height: 100%;
+    padding: var(--outer-padding);
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.outer-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
-.header-tracker {
-    order: 0;
-    flex: 0 0 33%;
+.inner-row {
+    margin-bottom: var(--inner-padding);
+}
 
+.outer-col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 16px;
 }
 
-.header-map {
-    order: 1;
-    flex: 0 0 66%;
+.first-col {
+    flex: 0 0 var(--first-col-width);
 }
 
-.tracker-row {
-    display: flex;
-    width: 100%;
-    column-gap: 8px;
+.second-col {
+    flex: 0 0 var(--second-col-width);
 }
 
-.tracker-element {
-    flex: 1 1 10px;
-    width: 10px;
+.inner-col {
+    margin-right: var(--inner-padding);
 }
 
-.not-tracked {
-    filter: grayscale(100%) contrast(50%);
+.growing {
+    flex: 1 1 auto;
+}
+
+#story-item-tracker {
+    background-color: yellow;
+}
+
+#pokedex-tracker {
+    background-color: green;
+}
+
+#top {
+    flex: 0 0 var(--first-row-height);
+    background-color: red;
+}
+
+#bottom {
+    background-color: blue;
+}
+
+#location-list {
+    background-color: orchid;
+}
+
+#pokemon-list {
+    background-color: olive;
+}
+
+#wild-pokemon-list {
+    background-color: white;
+    flex: 3 3 auto;
+}
+
+#static-pokemon-list {
+    background-color: darkcyan;
+}
+
+#map {
+    background-color: orange;
 }

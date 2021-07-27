@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pokémon Crystal Map Tracker</title>
+    <title>Pokémon Map Tracker</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
@@ -18,61 +18,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="header-tracker">
-            <div class="tracker-row">
-                <img class="tracker-element not-tracked" src="img/badges/zephyr.png" />
-                <img class="tracker-element not-tracked" src="img/badges/hive.png" />
-                <img class="tracker-element not-tracked" src="img/badges/plain.png" />
-                <img class="tracker-element not-tracked" src="img/badges/fog.png" />
-                <img class="tracker-element not-tracked" src="img/badges/storm.png" />
-                <img class="tracker-element not-tracked" src="img/badges/mineral.png" />
-                <img class="tracker-element not-tracked" src="img/badges/glacier.png" />
-                <img class="tracker-element not-tracked" src="img/badges/rising.png" />
-            </div>
-            <div class="tracker-row">
-                <img class="tracker-element not-tracked" src="img/badges/boulder.png" />
-                <img class="tracker-element not-tracked" src="img/badges/cascade.png" />
-                <img class="tracker-element not-tracked" src="img/badges/thunder.png" />
-                <img class="tracker-element not-tracked" src="img/badges/rainbow.png" />
-                <img class="tracker-element not-tracked" src="img/badges/soul.png" />
-                <img class="tracker-element not-tracked" src="img/badges/marsh.png" />
-                <img class="tracker-element not-tracked" src="img/badges/volcano.png" />
-                <img class="tracker-element not-tracked" src="img/badges/earth.png" />
-            </div>
-            <div class="tracker-row">
-                <img class="tracker-element not-tracked" src="img/items/hm.png" />
-                <img class="tracker-element not-tracked" src="img/items/hm.png" />
-                <img class="tracker-element not-tracked" src="img/items/hm.png" />
-                <img class="tracker-element not-tracked" src="img/items/hm.png" />
-                <img class="tracker-element not-tracked" src="img/items/hm.png" />
-                <img class="tracker-element not-tracked" src="img/items/hm.png" />
-                <img class="tracker-element not-tracked" src="img/items/hm.png" />
-            </div>
+    <div id="tracker-complete" class="outer-col">
+        <div id="top" class="outer-row inner-row">
+            <div id="story-item-tracker" class="first-col inner-col"> Story Item Tracker</div>
+            <div id="pokedex-tracker" class="growing"> Pokédex Tracker</div>
         </div>
-        <svg class="header-map" viewBox="0 0 288 112" xmlns="http://www.w3.org/2000/svg">
-            <image style="image-rendering: pixelated" href="img/maps/crystal.png" width="288" height="112"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="17" y="65" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="41" y="33" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="65" y="49" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="73" y="97" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="73" y="17" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="97" y="1" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="121" y="9" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="137" y="41" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="145" y="73" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="161" y="25" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="161" y="9" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="201" y="105" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="209" y="25" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="265" y="25" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="265" y="33" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_red.png" x="273" y="41" width="6" height="6"/>
-            <image style="image-rendering: pixelated" href="img/maps/crystal_marker_city_red.png" x="128" y="72" width="8" height="8"/>
-        </svg>
+        <div id="bottom" class="outer-row growing">
+            <div id="location-list" class="first-col inner-col"> Location / Item List</div>
+            <div id="pokemon-list" class="second-col inner-col outer-col">
+                <div id="wild-pokemon-list" class="inner-row growing">Wild Pokémon</div>
+                <div id="static-pokemon-list" class="growing">Static Pokémon</div>
+            </div>
+            <div id="map" class="growing"> Map</div>
+        </div>
     </div>
-    <script>
-        $(".tracker-element").click(function() {this.classList.toggle("not-tracked")});
-    </script>
 </body>
 </html>

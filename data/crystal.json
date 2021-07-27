@@ -1,5 +1,6 @@
 {
     "pokedex": "pokedex/gen2.json",
+    "languages": ["ja", "en", "es", "fr", "de", "it", "ko", "zh-Hans", "zh-Hant"],
     "maps": {
         "default": "kanto",
         "markers": {
