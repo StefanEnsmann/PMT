@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: orange">
+  <div class="map">
       Map
   </div>
 </template>
@@ -11,4 +11,9 @@ export default {
 </script>
 
 <style scoped>
+.map {
+  background-color: orange;
+  width: 100%;
+  height: 100%;
+}
 </style>

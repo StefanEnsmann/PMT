@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: white">
+  <div class="wild-pokemon">
       Wild Pokémon
   </div>
 </template>
@@ -11,4 +11,9 @@ export default {
 </script>
 
 <style scoped>
+.wild-pokemon {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
 </style>

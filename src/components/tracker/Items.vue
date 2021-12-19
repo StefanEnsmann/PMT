@@ -1,6 +1,6 @@
 <template>
-  <div style="background-color: orchid">
-      Location / Item List
+  <div class="locations">
+      Location List
   </div>
 </template>
 
@@ -11,4 +11,9 @@ export default {
 </script>
 
 <style scoped>
+.locations {
+  background-color: orchid;
+  width: 100%;
+  height: 100%;
+}
 </style>

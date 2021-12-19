@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: yellow;">
+  <div class="story-items">
       Story Item Tracker
   </div>
 </template>
@@ -11,4 +11,9 @@ export default {
 </script>
 
 <style scoped>
+.story-items {
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+}
 </style>

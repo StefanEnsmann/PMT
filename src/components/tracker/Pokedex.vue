@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: green">
+  <div class="pokedex">
       Pokédex Tracker
   </div>
 </template>
@@ -11,4 +11,9 @@ export default {
 </script>
 
 <style scoped>
+.pokedex {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+}
 </style>

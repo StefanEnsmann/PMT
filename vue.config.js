@@ -8,12 +8,6 @@ module.exports = {
             template: 'public/index.html',
             filename: 'index.html',
             title: 'Pokémon Map Tracker',
-        },
-        images: {
-            entry: 'src/images.js',
-            template: 'public/images.html',
-            filename: 'images.html',
-            title: 'Pokémon Images',
         }
     },
     configureWebpack: {

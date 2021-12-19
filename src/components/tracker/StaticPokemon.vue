@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: darkcyan">
+  <div class="static-pokemon">
       Static Pokémon
   </div>
 </template>
@@ -11,4 +11,9 @@ export default {
 </script>
 
 <style scoped>
+.static-pokemon {
+  background-color: darkcyan;
+  width: 100%;
+  height: 100%;
+}
 </style>
