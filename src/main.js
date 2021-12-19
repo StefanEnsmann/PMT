@@ -7,6 +7,11 @@ const configStore = {
     state: {
         supportedLanguages: null, // [string]
         currentLanguage: null, // string
+    },
+    getters: {
+        isValid(state) {
+            return state.supportedLanguages !== null && state.currentLanguage !== null;
+        }
     }
 }
 
@@ -21,6 +26,9 @@ const storyItemsStore = {
         }
     },
     getters: {
+        isValid(state) {
+            return state.categories !== null;
+        },
         get(state) {
             return (category, item) => state.categories[category][item];
         },
@@ -67,6 +75,9 @@ const pokedexStore = {
         }
     },
     getters: {
+        isValid(state) {
+            return state.list !== null;
+        },
         get(state) {
             return (idx) => state.list[idx];
         },
@@ -96,12 +107,18 @@ const locationsStore = {
     namespaced: true,
     state: {
         list: null
+    },
+    getters: {
+        isValid(state) {
+            return state.list !== null;
+        },
     }
 };
 
 const store = createStore({
     strict: process.env.NODE_ENV !== "production",
     modules: {
+        config: configStore,
         storyItems: storyItemsStore,
         pokedex: pokedexStore,
         locations: locationsStore,

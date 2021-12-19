@@ -1,19 +1,27 @@
 <template>
   <div id='container'>
-    <!--<Configurator />-->
-    <Tracker />
+    <Configurator v-if="!hasTrackerState" />
+    <Tracker v-else/>
   </div>
 </template>
 
 <script>
-//import Configurator from './components/Configurator.vue'
+import Configurator from './components/Configurator.vue'
 import Tracker from './components/Tracker.vue'
 
 export default {
   name: 'PokemonMapTracker',
   components: {
     Tracker,
-  //  Configurator
+    Configurator
+  },
+  computed: {
+    hasTrackerState() {
+      return this.$store.state.config.isValid
+        && this.$store.state.storyItems.isValid
+        && this.$store.state.pokedex.isValid
+        && this.$store.state.locations.isValid;
+    }
   }
 }
 </script>
