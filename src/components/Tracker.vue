@@ -19,15 +19,15 @@
 </template>
 
 <script>
-import Items from './tracker/Items.vue'
-import Map from './tracker/Map.vue'
-import Pokedex from './tracker/Pokedex.vue'
-import Pokemon from './tracker/Pokemon.vue'
-import StoryItems from './tracker/StoryItems.vue'
-import { Splitpanes, Pane } from 'splitpanes';
+import Items from "./tracker/Items.vue";
+import Map from "./tracker/Map.vue";
+import Pokedex from "./tracker/Pokedex.vue";
+import Pokemon from "./tracker/Pokemon.vue";
+import StoryItems from "./tracker/StoryItems.vue";
+import { Splitpanes, Pane } from "splitpanes";
 
 export default {
-  name: 'Tracker',
+  name: "Tracker",
   components: {
     Items,
     Map,
@@ -37,8 +37,8 @@ export default {
 
     Splitpanes,
     Pane,
-  }
-}
+  },
+};
 </script>
 
 <style>
