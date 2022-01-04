@@ -1,0 +1,3 @@
+[submodule "public/game_data"]
+	path = public/game_data
+	url = https://github.com/StefanEnsmann/PokemonRuleSets
