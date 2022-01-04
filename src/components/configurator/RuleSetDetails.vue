@@ -20,7 +20,7 @@
         <a v-if="!fileLoader" :href="details.path" :download="details.path" class="download-button"><img src="@/assets/img/ui/download.svg"/></a>
       </div>
       <div class="details-subheading">
-        {{ gameName }}
+        {{ details.game }}
       </div>
       <div class="details-container">
         <div style="grid-row: 1 / 2; grid-column: 1 / 2">
@@ -80,19 +80,6 @@ export default {
     },
   },
   emits: ["fileSelected"],
-  computed: {
-    gameName() {
-      if ("en" in this.details.game) {
-        return this.details.game["en"];
-      }
-      else if (Object.values(this.details.game).length > 0) {
-        return Object.values(this.details.game)[0];
-      }
-      else {
-        return "No game title found!";
-      }
-    }
-  },
   methods: {
     loadConfigurationFile(event) {
       const file = event.target.files[0];

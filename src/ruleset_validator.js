@@ -1,12 +1,16 @@
-function len(arr) {
-    return Object.keys(arr).length;
-}
-
 function countLocations(locations) {
     let results = [];
-    for (let subLocations of Object.values(locations)) {
-        results.push(countLocations(subLocations["locations"]));
-        results.push([1, len(subLocations["items"]), len(subLocations["trainers"]), len(subLocations["pokemon"]), len(subLocations["trades"])]);
+    for (let subLocation of locations) {
+        let keys = Object.keys(subLocation);
+        if (keys.includes("locations")) {
+            results.push(countLocations(subLocation["locations"]));
+        }
+        results.push([1,
+            keys.includes("items") ? subLocation["items"].length : 0,
+            keys.includes("trainers") ? subLocation["trainers"].length : 0,
+            keys.includes("pokemon") ? subLocation["pokemon"].length : 0,
+            keys.includes("trades") ? subLocation["trades"].length : 0
+        ]);
     }
     return results.reduce((p, c) => p.map((v, i) => v + c[i]), [0, 0, 0, 0, 0]);
 }
@@ -20,14 +24,14 @@ function validateRuleset(ruleSetString) {
         details["pokemon"] = ruleSet["pokedex"].length;
         details["languages"] = ruleSet["languages"];
         details["story_items"] = 0;
-        for (let category of Object.values(ruleSet["story_items"])) {
-            details["story_items"] += Object.keys(category).length;
+        for (let category of ruleSet["story_items"]) {
+            details["story_items"] += category["items"].length;
         }
         [details["locations"], details["items"], details["trainers"], details["static_pokemon"], details["trades"]] = countLocations(ruleSet["locations"]);
         return details;
     }
     catch (e) {
-        console.log(e.message);
+        console.log(e.stack);
         return null;
     }
 }
