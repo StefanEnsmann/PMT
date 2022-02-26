@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: Get latest code
       uses: actions/checkout@v2
+      with:
+        submodules: true
 
     - name: Use Node.js 16
       uses: actions/setup-node@v2
@@ -28,4 +30,3 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: dist/
-        dry-run: true
