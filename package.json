@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "pkmn-maptracker-data": "github:StefanEnsmann/PokemonMapTrackerData#0.0.1",
     "splitpanes": "^3.0.6",
     "vue": "^3.0.0",
     "vuex": "^4.0.2"
