@@ -12181,6 +12181,104 @@
       "nr": 898,
       "typeA": "psycho",
       "typeB": "grass"
+    },
+    {
+      "localization": {
+        "de": "Damythir",
+        "en": "Wyrdeer",
+        "fr": "Cerbyllin",
+        "jp": "アヤシシ",
+        "ko": "신비록",
+        "zh-Hans": "诡角鹿",
+        "zh-Hant": "詭角鹿"
+      },
+      "nr": 899,
+      "typeA": "psycho",
+      "typeB": "grass"
+    },
+    {
+      "localization": {
+        "de": "Axantor",
+        "en": "Kleavor",
+        "fr": "Hachécateur",
+        "jp": "バサギリ",
+        "ko": "사마자르",
+        "zh-Hans": "劈斧螳螂",
+        "zh-Hant": "劈斧螳螂"
+      },
+      "nr": 900,
+      "typeA": "psycho",
+      "typeB": "grass"
+    },
+    {
+      "localization": {
+        "de": "Ursaluna",
+        "en": "Ursaluna",
+        "fr": "Ursaking",
+        "jp": "ガチグマ",
+        "ko": "다투곰",
+        "zh-Hans": "月月熊",
+        "zh-Hant": "月月熊"
+      },
+      "nr": 901,
+      "typeA": "psycho",
+      "typeB": "grass"
+    },
+    {
+      "localization": {
+        "de": "Salmagnis",
+        "en": "Basculegion",
+        "fr": "Paragruel",
+        "jp": "イダイトウ",
+        "ko": "대쓰여너",
+        "zh-Hans": "幽尾玄鱼",
+        "zh-Hant": "幽尾玄魚"
+      },
+      "nr": 902,
+      "typeA": "psycho",
+      "typeB": "grass"
+    },
+    {
+      "localization": {
+        "de": "Snieboss",
+        "en": "Sneasler",
+        "fr": "Farfurex",
+        "jp": "オオニューラ",
+        "ko": "포푸니크",
+        "zh-Hans": "大狃拉",
+        "zh-Hant": "大狃拉"
+      },
+      "nr": 903,
+      "typeA": "psycho",
+      "typeB": "grass"
+    },
+    {
+      "localization": {
+        "de": "Myriador",
+        "en": "Overqwil",
+        "fr": "Qwilpik",
+        "jp": "ハリーマン",
+        "ko": "장침바루",
+        "zh-Hans": "万针鱼",
+        "zh-Hant": "萬針魚"
+      },
+      "nr": 904,
+      "typeA": "psycho",
+      "typeB": "grass"
+    },
+    {
+      "localization": {
+        "de": "Cupidos",
+        "en": "Enamorus",
+        "fr": "Amovénus",
+        "jp": "ラブトロス",
+        "ko": "러브로스",
+        "zh-Hans": "眷恋云",
+        "zh-Hant": "眷戀雲"
+      },
+      "nr": 905,
+      "typeA": "psycho",
+      "typeB": "grass"
     }
   ]
 }
