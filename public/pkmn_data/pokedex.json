@@ -12179,7 +12179,7 @@
         "zh-Hant": "蕾冠王"
       },
       "nr": 898,
-      "typeA": "psycho",
+      "typeA": "psychic",
       "typeB": "grass"
     },
     {
@@ -12193,8 +12193,8 @@
         "zh-Hant": "詭角鹿"
       },
       "nr": 899,
-      "typeA": "psycho",
-      "typeB": "grass"
+      "typeA": "normal",
+      "typeB": "psychic"
     },
     {
       "localization": {
@@ -12207,8 +12207,8 @@
         "zh-Hant": "劈斧螳螂"
       },
       "nr": 900,
-      "typeA": "psycho",
-      "typeB": "grass"
+      "typeA": "bug",
+      "typeB": "rock"
     },
     {
       "localization": {
@@ -12221,8 +12221,8 @@
         "zh-Hant": "月月熊"
       },
       "nr": 901,
-      "typeA": "psycho",
-      "typeB": "grass"
+      "typeA": "ground",
+      "typeB": "normal"
     },
     {
       "localization": {
@@ -12235,8 +12235,8 @@
         "zh-Hant": "幽尾玄魚"
       },
       "nr": 902,
-      "typeA": "psycho",
-      "typeB": "grass"
+      "typeA": "water",
+      "typeB": "ghost"
     },
     {
       "localization": {
@@ -12249,8 +12249,8 @@
         "zh-Hant": "大狃拉"
       },
       "nr": 903,
-      "typeA": "psycho",
-      "typeB": "grass"
+      "typeA": "fighting",
+      "typeB": "poison"
     },
     {
       "localization": {
@@ -12263,8 +12263,8 @@
         "zh-Hant": "萬針魚"
       },
       "nr": 904,
-      "typeA": "psycho",
-      "typeB": "grass"
+      "typeA": "dark",
+      "typeB": "poison"
     },
     {
       "localization": {
@@ -12277,8 +12277,8 @@
         "zh-Hant": "眷戀雲"
       },
       "nr": 905,
-      "typeA": "psycho",
-      "typeB": "grass"
+      "typeA": "fairy",
+      "typeB": "flying"
     }
   ]
 }
