@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createStore } from 'vuex'
 import PokemonMapTracker from './PokemonMapTracker.vue'
+import './index.css'
 
 const configStore = {
     namespaces: true,
